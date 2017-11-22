@@ -1,0 +1,60 @@
+{ "CameraTrapMetadataStandard": {
+    "ProjectID": " ",
+    "ProjectName": " ",
+    "ProjectObjectives": " ",
+    "ProjectDesign": " ",
+    "CountryCode": " ",
+    "PublishDate": " ",
+    "ProjectDataAccessandUseConstraints": " ",
+    "PrincipalInvestigators": {
+      "PrincipalInvestigator": {
+        "PrincipalInvestigatorName": " ",
+        "PrincipalInvestigatorEmail": " "
+      }
+    },
+    "ProjectContacts": {
+      "ProjectContact": {
+        "ProjectContactName": " ",
+        "ProjectContactEmail": " "
+      }
+    },
+    "OrganizationName": " ",
+    "CameraDeploymentID": " ",
+    "CameraSiteName": " ",
+    "CameraDeploymentBeginDate": " ",
+    "CameraDeploymentEndDate": " ",
+    "DeploymentLocationID": " ",
+    "QuietPeriodSetting": " ",
+    "ActualLatitude": " ",
+    "ActualLongitude": " ",
+    "CameraMake": " ",
+    "Bait": " ",
+    "Feature": " ",
+    "CameraStatus": " ",
+    "Other": " ",
+    "ImageSequence": {
+      "ImageSequenceID": " ",
+      "ImageSequenceBeginTime": " ",
+      "ImageSequenceEndTime": " ",
+      "SequenceIdentificationsBy": { "sequenceIdentifiedBy": " " },
+      "SequenceIdentifications": {
+        "Identification": {
+          "SpeciesScientificName": " ",
+          "Count": " "
+        }
+      }
+    },
+    "Image": {
+      "ImageID": " ",
+      "ImageDateTime": " ",
+      "PhotoType": " ",
+      "PhotoTypeIdentifications": { "PhotoTypeIdentifiedBy": " " },
+      "ImageIdentifications": {
+        "Identification": {
+          "SpeciesScientificName": " ",
+          "Count": " "
+        }
+      }
+    }
+  }
+}
