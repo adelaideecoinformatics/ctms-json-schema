@@ -35,13 +35,20 @@ function mapType(element) {
       return result
     },
     number: (element) => {
-      let minimum = element.minimum
+      function buildResult(type) {
+        return {
+          min: element.minimum,
+          max: element.maximum || undefined,
+          default: element.default || undefined,
+          type: type
+        }
+      }
       let floatLookup = ['QuietPeriodSetting', 'ActualLatitude', 'ActualLongitude']
       let strategyKey = element['$id'].replace(/.*\//, '')
       if (floatLookup.indexOf(strategyKey) < 0) {
-        return { type: 'integer', minimum: minimum }
+        return buildResult('integer')
       }
-      return { type: 'float', minimum: minimum }
+      return buildResult('float')
     },
     object: (element) => {
       return {

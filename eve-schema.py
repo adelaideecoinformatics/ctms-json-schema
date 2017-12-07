@@ -67,16 +67,18 @@
         "type": "string"
     },
     "QuietPeriodSetting": {
-        "type": "float",
-        "minimum": 0
+        "min": 0,
+        "type": "float"
     },
     "ActualLatitude": {
-        "type": "float",
-        "minimum": 0
+        "min": -90,
+        "max": 90,
+        "type": "float"
     },
     "ActualLongitude": {
-        "type": "float",
-        "minimum": 0
+        "min": -180,
+        "max": 180,
+        "type": "float"
     },
     "CameraMake": {
         "type": "string"
@@ -139,8 +141,8 @@
                 "type": "string"
             },
             "ImageSequenceDefinition": {
-                "type": "integer",
-                "minimum": 0
+                "min": 0,
+                "type": "integer"
             },
             "SequenceIdentifiedBy": {
                 "type": "list",
@@ -157,8 +159,9 @@
                             "type": "string"
                         },
                         "Count": {
-                            "type": "integer",
-                            "minimum": 0
+                            "min": 1,
+                            "default": 1,
+                            "type": "integer"
                         }
                     }
                 }
@@ -204,8 +207,9 @@
                             "type": "string"
                         },
                         "Count": {
-                            "type": "integer",
-                            "minimum": 0
+                            "min": 1,
+                            "default": 1,
+                            "type": "integer"
                         }
                     }
                 }

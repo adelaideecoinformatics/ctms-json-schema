@@ -42,6 +42,14 @@ function addFormatsAndConstraints(targetObj) {
     'CameraDeploymentBeginDate': datetime,
     'CameraDeploymentEndDate': datetime,
     'DeploymentLocationID': alphanumeric,
+    'ActualLatitude': {
+      minimum: -90,
+      maximum: 90
+    },
+    'ActualLongitude': {
+      minimum: -180,
+      maximum: 180
+    },
     'QuietPeriodSetting': {
       description: 'Time specified between shutter triggers when activity in the sensor will not trigger the shutter. Specified in minutes and fraction of minutes'
     },
@@ -51,9 +59,17 @@ function addFormatsAndConstraints(targetObj) {
     'ImageSequence.properties.ImageSequenceID': uri,
     'ImageSequence.properties.ImageSequenceBeginTime': datetime,
     'ImageSequence.properties.ImageSequenceEndTime': datetime,
+    'ImageSequence.properties.SequenceIdentifications.items.properties.Count': {
+      default: 1,
+      minimum: 1
+    },
     'Image.properties.ImageID': uri,
     'Image.properties.ImageDateTime': datetime,
-    'Image.properties.PhotoType': enum_
+    'Image.properties.PhotoType': enum_,
+    'Image.properties.ImageIdentifications.items.properties.Count': {
+      default: 1,
+      minimum: 1
+    }
   }
   for (const currProp in typeMapping) {
     const path = 'properties.' + currProp
