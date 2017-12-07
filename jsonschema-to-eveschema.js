@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Converts the JSON-schema to a Eve (python-eve.org) schema
 // Run it with:
-//   node jsonschema-to-eveschema.js > eveschema.py
+//   node jsonschema-to-eveschema.js > eve-schema.py
 // ...then copy-paste it into your Eve settings.py
 fs = require('fs')
 jsonSchemaStr = fs.readFileSync('./schema.json', 'utf8')
@@ -25,10 +25,23 @@ function mapType(element) {
   const type = element.type
   const typeStrategies = {
     string: (element) => {
-      return { type: 'string' }
+      let result = { type: 'string' }
+      if (element.enum) {
+        result.allowed = element.enum
+      }
+      if (element.default) {
+        result.default = element.default
+      }
+      return result
     },
-    integer: (element) => {
-      return { type: 'integer' }
+    number: (element) => {
+      let minimum = element.minimum
+      let floatLookup = ['QuietPeriodSetting', 'ActualLatitude', 'ActualLongitude']
+      let strategyKey = element['$id'].replace(/.*\//, '')
+      if (floatLookup.indexOf(strategyKey) < 0) {
+        return { type: 'integer', minimum: minimum }
+      }
+      return { type: 'float', minimum: minimum }
     },
     object: (element) => {
       return {
