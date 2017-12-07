@@ -401,7 +401,7 @@
                                 "type": "number",
                                 "title": "The Count Schema.",
                                 "description": "An explanation about the purpose of this instance.",
-                                "default": 1,
+                                "default": 0,
                                 "examples": [
                                     1
                                 ],
@@ -496,7 +496,7 @@
                                 "type": "number",
                                 "title": "The Count Schema.",
                                 "description": "An explanation about the purpose of this instance.",
-                                "default": 1,
+                                "default": 0,
                                 "examples": [
                                     1
                                 ],

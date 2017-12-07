@@ -60,14 +60,12 @@ function addFormatsAndConstraints(targetObj) {
     'ImageSequence.properties.ImageSequenceBeginTime': datetime,
     'ImageSequence.properties.ImageSequenceEndTime': datetime,
     'ImageSequence.properties.SequenceIdentifications.items.properties.Count': {
-      default: 1,
       minimum: 1
     },
     'Image.properties.ImageID': uri,
     'Image.properties.ImageDateTime': datetime,
     'Image.properties.PhotoType': enum_,
     'Image.properties.ImageIdentifications.items.properties.Count': {
-      default: 1,
       minimum: 1
     }
   }

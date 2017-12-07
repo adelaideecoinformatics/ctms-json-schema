@@ -160,7 +160,6 @@
                         },
                         "Count": {
                             "min": 1,
-                            "default": 1,
                             "type": "integer"
                         }
                     }
@@ -208,7 +207,6 @@
                         },
                         "Count": {
                             "min": 1,
-                            "default": 1,
                             "type": "integer"
                         }
                     }

@@ -50,3 +50,4 @@ This project was created to facilitate creating a http://python-eve.org API. Eve
 
 # TODO
  - Fill in `titles`, and `description` fields in the schema.
+ - Look at the defaults. Might need to make them conditional i.e. default of X only when Y is also provided, otherwise blank
