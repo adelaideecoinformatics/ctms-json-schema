@@ -1,60 +1,52 @@
-{ "CameraTrapMetadataStandard": {
-    "ProjectID": " ",
-    "ProjectName": " ",
-    "ProjectObjectives": " ",
-    "ProjectDesign": " ",
-    "CountryCode": " ",
-    "PublishDate": " ",
-    "ProjectDataAccessandUseConstraints": " ",
-    "PrincipalInvestigators": {
-      "PrincipalInvestigator": {
-        "PrincipalInvestigatorName": " ",
-        "PrincipalInvestigatorEmail": " "
-      }
-    },
-    "ProjectContacts": {
-      "ProjectContact": {
-        "ProjectContactName": " ",
-        "ProjectContactEmail": " "
-      }
-    },
-    "OrganizationName": " ",
-    "CameraDeploymentID": " ",
-    "CameraSiteName": " ",
-    "CameraDeploymentBeginDate": " ",
-    "CameraDeploymentEndDate": " ",
-    "DeploymentLocationID": " ",
-    "QuietPeriodSetting": " ",
-    "ActualLatitude": " ",
-    "ActualLongitude": " ",
-    "CameraMake": " ",
-    "Bait": " ",
-    "Feature": " ",
-    "CameraStatus": " ",
-    "Other": " ",
-    "ImageSequence": {
-      "ImageSequenceID": " ",
-      "ImageSequenceBeginTime": " ",
-      "ImageSequenceEndTime": " ",
-      "SequenceIdentificationsBy": { "sequenceIdentifiedBy": " " },
-      "SequenceIdentifications": {
-        "Identification": {
-          "SpeciesScientificName": " ",
-          "Count": " "
-        }
-      }
-    },
-    "Image": {
-      "ImageID": " ",
-      "ImageDateTime": " ",
-      "PhotoType": " ",
-      "PhotoTypeIdentifications": { "PhotoTypeIdentifiedBy": " " },
-      "ImageIdentifications": {
-        "Identification": {
-          "SpeciesScientificName": " ",
-          "Count": " "
-        }
-      }
-    }
+{
+  "ProjectID": "uri",
+  "ProjectName": "string",
+  "ProjectObjectives": "string",
+  "ProjectDesign": "string",
+  "CountryCode": "ISO3166 country code",
+  "PublishDate": "yyyy-mm-dd",
+  "ProjectDataAccessandUseConstraints": "string",
+  "PrincipalInvestigators": [{
+    "PrincipalInvestigatorName": "string",
+    "PrincipalInvestigatorEmail": "email"
+  }],
+  "ProjectContacts": [{
+    "ProjectContactName": "string",
+    "ProjectContactEmail": "email"
+  }],
+  "OrganizationName": "string",
+  "CameraDeploymentID": "uri",
+  "CameraSiteName": "string",
+  "CameraDeploymentBeginDate": "yyyy-mm-ddThh:mm:ss",
+  "CameraDeploymentEndDate": "yyyy-mm-ddThh:mm:ss",
+  "DeploymentLocationID": "[a-zA-Z0-9]",
+  "QuietPeriodSetting": 1.0,
+  "ActualLatitude": 1.0,
+  "ActualLongitude": 1.0,
+  "CameraMake": "string",
+  "Bait": "[none];scent;meat;visual;acoustic;other",
+  "Feature": "road, paved;road, dirt;trail, hiking/people;trail, game;road underpass/overpass/bridge;culvert;burrow;nest site;carcass;water source/spring;fruiting tree;[other]",
+  "CameraStatus": "[camera functioning];unknown failure;vandalism/theft;memory card/film failure;camera hardware failure;wildlife damage",
+  "Other": "string",
+  "ImageSequence": {
+    "ImageSequenceID": "uri",
+    "ImageSequenceBeginTime": "yyyy-mm-ddThh:mm:ss",
+    "ImageSequenceEndTime": "yyyy-mm-ddThh:mm:ss",
+    "ImageSequenceDefinition": 1,
+    "SequenceIdentifiedBy": [ "string" ],
+    "SequenceIdentifications": [{
+      "SpeciesScientificName": "string",
+      "Count": 1
+    }]
+  },
+  "Image": {
+    "ImageID": "uri",
+    "ImageDateTime": "yyyy-mm-ddThh:mm:ss",
+    "PhotoType": "start;end;set up;blank;animal;staff;unknown;unidentifiable;timelapse;[]",
+    "PhotoTypeIdentifiedBy": [ "string" ],
+    "ImageIdentifications": [{
+      "SpeciesScientificName": "string",
+      "Count": 1
+    }]
   }
 }

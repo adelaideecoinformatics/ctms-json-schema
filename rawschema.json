@@ -1,0 +1,454 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "properties": {
+    "ProjectID": {
+      "$id": "/properties/ProjectID",
+      "type": "string",
+      "title": "The Projectid Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "uri"
+      ]
+    },
+    "ProjectName": {
+      "$id": "/properties/ProjectName",
+      "type": "string",
+      "title": "The Projectname Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "string"
+      ]
+    },
+    "ProjectObjectives": {
+      "$id": "/properties/ProjectObjectives",
+      "type": "string",
+      "title": "The Projectobjectives Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "string"
+      ]
+    },
+    "ProjectDesign": {
+      "$id": "/properties/ProjectDesign",
+      "type": "string",
+      "title": "The Projectdesign Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "string"
+      ]
+    },
+    "CountryCode": {
+      "$id": "/properties/CountryCode",
+      "type": "string",
+      "title": "The Countrycode Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "ISO3166 country code"
+      ]
+    },
+    "PublishDate": {
+      "$id": "/properties/PublishDate",
+      "type": "string",
+      "title": "The Publishdate Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "yyyy-mm-dd"
+      ]
+    },
+    "ProjectDataAccessandUseConstraints": {
+      "$id": "/properties/ProjectDataAccessandUseConstraints",
+      "type": "string",
+      "title": "The Projectdataaccessanduseconstraints Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "string"
+      ]
+    },
+    "PrincipalInvestigators": {
+      "$id": "/properties/PrincipalInvestigators",
+      "type": "array",
+      "items": {
+        "$id": "/properties/PrincipalInvestigators/items",
+        "type": "object",
+        "properties": {
+          "PrincipalInvestigatorName": {
+            "$id": "/properties/PrincipalInvestigators/items/properties/PrincipalInvestigatorName",
+            "type": "string",
+            "title": "The Principalinvestigatorname Schema.",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "string"
+            ]
+          },
+          "PrincipalInvestigatorEmail": {
+            "$id": "/properties/PrincipalInvestigators/items/properties/PrincipalInvestigatorEmail",
+            "type": "string",
+            "title": "The Principalinvestigatoremail Schema.",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "email"
+            ]
+          }
+        }
+      }
+    },
+    "ProjectContacts": {
+      "$id": "/properties/ProjectContacts",
+      "type": "array",
+      "items": {
+        "$id": "/properties/ProjectContacts/items",
+        "type": "object",
+        "properties": {
+          "ProjectContactName": {
+            "$id": "/properties/ProjectContacts/items/properties/ProjectContactName",
+            "type": "string",
+            "title": "The Projectcontactname Schema.",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "string"
+            ]
+          },
+          "ProjectContactEmail": {
+            "$id": "/properties/ProjectContacts/items/properties/ProjectContactEmail",
+            "type": "string",
+            "title": "The Projectcontactemail Schema.",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "email"
+            ]
+          }
+        }
+      }
+    },
+    "OrganizationName": {
+      "$id": "/properties/OrganizationName",
+      "type": "string",
+      "title": "The Organizationname Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "string"
+      ]
+    },
+    "CameraDeploymentID": {
+      "$id": "/properties/CameraDeploymentID",
+      "type": "string",
+      "title": "The Cameradeploymentid Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "uri"
+      ]
+    },
+    "CameraSiteName": {
+      "$id": "/properties/CameraSiteName",
+      "type": "string",
+      "title": "The Camerasitename Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "string"
+      ]
+    },
+    "CameraDeploymentBeginDate": {
+      "$id": "/properties/CameraDeploymentBeginDate",
+      "type": "string",
+      "title": "The Cameradeploymentbegindate Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "yyyy-mm-ddThh:mm:ss"
+      ]
+    },
+    "CameraDeploymentEndDate": {
+      "$id": "/properties/CameraDeploymentEndDate",
+      "type": "string",
+      "title": "The Cameradeploymentenddate Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "yyyy-mm-ddThh:mm:ss"
+      ]
+    },
+    "DeploymentLocationID": {
+      "$id": "/properties/DeploymentLocationID",
+      "type": "string",
+      "title": "The Deploymentlocationid Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "[a-zA-Z0-9]"
+      ]
+    },
+    "QuietPeriodSetting": {
+      "$id": "/properties/QuietPeriodSetting",
+      "type": "number",
+      "title": "The Quietperiodsetting Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0,
+      "examples": [
+        1
+      ],
+      "minimum": 0
+    },
+    "ActualLatitude": {
+      "$id": "/properties/ActualLatitude",
+      "type": "number",
+      "title": "The Actuallatitude Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0,
+      "examples": [
+        1
+      ],
+      "minimum": 0
+    },
+    "ActualLongitude": {
+      "$id": "/properties/ActualLongitude",
+      "type": "number",
+      "title": "The Actuallongitude Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": 0,
+      "examples": [
+        1
+      ],
+      "minimum": 0
+    },
+    "CameraMake": {
+      "$id": "/properties/CameraMake",
+      "type": "string",
+      "title": "The Cameramake Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "string"
+      ]
+    },
+    "Bait": {
+      "$id": "/properties/Bait",
+      "type": "string",
+      "title": "The Bait Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "[none];scent;meat;visual;acoustic;other"
+      ]
+    },
+    "Feature": {
+      "$id": "/properties/Feature",
+      "type": "string",
+      "title": "The Feature Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "road, paved;road, dirt;trail, hiking/people;trail, game;road underpass/overpass/bridge;culvert;burrow;nest site;carcass;water source/spring;fruiting tree;[other]"
+      ]
+    },
+    "CameraStatus": {
+      "$id": "/properties/CameraStatus",
+      "type": "string",
+      "title": "The Camerastatus Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "[camera functioning];unknown failure;vandalism/theft;memory card/film failure;camera hardware failure;wildlife damage"
+      ]
+    },
+    "Other": {
+      "$id": "/properties/Other",
+      "type": "string",
+      "title": "The Other Schema.",
+      "description": "An explanation about the purpose of this instance.",
+      "default": "",
+      "examples": [
+        "string"
+      ]
+    },
+    "ImageSequence": {
+      "$id": "/properties/ImageSequence",
+      "type": "object",
+      "properties": {
+        "ImageSequenceID": {
+          "$id": "/properties/ImageSequence/properties/ImageSequenceID",
+          "type": "string",
+          "title": "The Imagesequenceid Schema.",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "uri"
+          ]
+        },
+        "ImageSequenceBeginTime": {
+          "$id": "/properties/ImageSequence/properties/ImageSequenceBeginTime",
+          "type": "string",
+          "title": "The Imagesequencebegintime Schema.",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "yyyy-mm-ddThh:mm:ss"
+          ]
+        },
+        "ImageSequenceEndTime": {
+          "$id": "/properties/ImageSequence/properties/ImageSequenceEndTime",
+          "type": "string",
+          "title": "The Imagesequenceendtime Schema.",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "yyyy-mm-ddThh:mm:ss"
+          ]
+        },
+        "ImageSequenceDefinition": {
+          "$id": "/properties/ImageSequence/properties/ImageSequenceDefinition",
+          "type": "number",
+          "title": "The Imagesequencedefinition Schema.",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            1
+          ],
+          "minimum": 0
+        },
+        "SequenceIdentifiedBy": {
+          "$id": "/properties/ImageSequence/properties/SequenceIdentifiedBy",
+          "type": "array",
+          "items": {
+            "$id": "/properties/ImageSequence/properties/SequenceIdentifiedBy/items",
+            "type": "string",
+            "title": "The 0 Schema.",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "string"
+            ]
+          }
+        },
+        "SequenceIdentifications": {
+          "$id": "/properties/ImageSequence/properties/SequenceIdentifications",
+          "type": "array",
+          "items": {
+            "$id": "/properties/ImageSequence/properties/SequenceIdentifications/items",
+            "type": "object",
+            "properties": {
+              "SpeciesScientificName": {
+                "$id": "/properties/ImageSequence/properties/SequenceIdentifications/items/properties/SpeciesScientificName",
+                "type": "string",
+                "title": "The Speciesscientificname Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "string"
+                ]
+              },
+              "Count": {
+                "$id": "/properties/ImageSequence/properties/SequenceIdentifications/items/properties/Count",
+                "type": "number",
+                "title": "The Count Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": 0,
+                "examples": [
+                  1
+                ],
+                "minimum": 0
+              }
+            }
+          }
+        }
+      }
+    },
+    "Image": {
+      "$id": "/properties/Image",
+      "type": "object",
+      "properties": {
+        "ImageID": {
+          "$id": "/properties/Image/properties/ImageID",
+          "type": "string",
+          "title": "The Imageid Schema.",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "uri"
+          ]
+        },
+        "ImageDateTime": {
+          "$id": "/properties/Image/properties/ImageDateTime",
+          "type": "string",
+          "title": "The Imagedatetime Schema.",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "yyyy-mm-ddThh:mm:ss"
+          ]
+        },
+        "PhotoType": {
+          "$id": "/properties/Image/properties/PhotoType",
+          "type": "string",
+          "title": "The Phototype Schema.",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "start;end;set up;blank;animal;staff;unknown;unidentifiable;timelapse;[]"
+          ]
+        },
+        "PhotoTypeIdentifiedBy": {
+          "$id": "/properties/Image/properties/PhotoTypeIdentifiedBy",
+          "type": "array",
+          "items": {
+            "$id": "/properties/Image/properties/PhotoTypeIdentifiedBy/items",
+            "type": "string",
+            "title": "The 0 Schema.",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "string"
+            ]
+          }
+        },
+        "ImageIdentifications": {
+          "$id": "/properties/Image/properties/ImageIdentifications",
+          "type": "array",
+          "items": {
+            "$id": "/properties/Image/properties/ImageIdentifications/items",
+            "type": "object",
+            "properties": {
+              "SpeciesScientificName": {
+                "$id": "/properties/Image/properties/ImageIdentifications/items/properties/SpeciesScientificName",
+                "type": "string",
+                "title": "The Speciesscientificname Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "string"
+                ]
+              },
+              "Count": {
+                "$id": "/properties/Image/properties/ImageIdentifications/items/properties/Count",
+                "type": "number",
+                "title": "The Count Schema.",
+                "description": "An explanation about the purpose of this instance.",
+                "default": 0,
+                "examples": [
+                  1
+                ],
+                "minimum": 0
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

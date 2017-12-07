@@ -1,456 +1,509 @@
 {
-  "definitions": {}, 
-  "$schema": "http://json-schema.org/draft-06/schema#", 
-  "$id": "https://dx.doi.org/10.3897%2FBDJ.4.e10197", 
-  "type": "object", 
-  "properties": {
-    "CameraTrapMetadataStandard": {
-      "$id": "/properties/CameraTrapMetadataStandard", 
-      "type": "object", 
-      "properties": {
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "properties": {
         "ProjectID": {
-          "$id": "/properties/CameraTrapMetadataStandard/properties/ProjectID", 
-          "type": "string", 
-          "title": "The Projectid Schema.", 
-          "description": "An explanation about the purpose of this instance.", 
-          "default": "", 
-          "examples": [
-            " "
-          ]
-        }, 
+            "$id": "/properties/ProjectID",
+            "type": "string",
+            "title": "The Projectid Schema.",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "uri"
+            ],
+            "format": "uri"
+        },
         "ProjectName": {
-          "$id": "/properties/CameraTrapMetadataStandard/properties/ProjectName", 
-          "type": "string", 
-          "title": "The Projectname Schema.", 
-          "description": "An explanation about the purpose of this instance.", 
-          "default": "", 
-          "examples": [
-            " "
-          ]
-        }, 
+            "$id": "/properties/ProjectName",
+            "type": "string",
+            "title": "The Projectname Schema.",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "string"
+            ]
+        },
         "ProjectObjectives": {
-          "$id": "/properties/CameraTrapMetadataStandard/properties/ProjectObjectives", 
-          "type": "string", 
-          "title": "The Projectobjectives Schema.", 
-          "description": "An explanation about the purpose of this instance.", 
-          "default": "", 
-          "examples": [
-            " "
-          ]
-        }, 
+            "$id": "/properties/ProjectObjectives",
+            "type": "string",
+            "title": "The Projectobjectives Schema.",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "string"
+            ]
+        },
         "ProjectDesign": {
-          "$id": "/properties/CameraTrapMetadataStandard/properties/ProjectDesign", 
-          "type": "string", 
-          "title": "The Projectdesign Schema.", 
-          "description": "An explanation about the purpose of this instance.", 
-          "default": "", 
-          "examples": [
-            " "
-          ]
-        }, 
+            "$id": "/properties/ProjectDesign",
+            "type": "string",
+            "title": "The Projectdesign Schema.",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "string"
+            ]
+        },
         "CountryCode": {
-          "$id": "/properties/CameraTrapMetadataStandard/properties/CountryCode", 
-          "type": "string", 
-          "title": "The Countrycode Schema.", 
-          "description": "An explanation about the purpose of this instance.", 
-          "default": "", 
-          "examples": [
-            " "
-          ]
-        }, 
+            "$id": "/properties/CountryCode",
+            "type": "string",
+            "title": "The Countrycode Schema.",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "ISO3166 country code"
+            ]
+        },
         "PublishDate": {
-          "$id": "/properties/CameraTrapMetadataStandard/properties/PublishDate", 
-          "type": "string", 
-          "title": "The Publishdate Schema.", 
-          "description": "An explanation about the purpose of this instance.", 
-          "default": "", 
-          "examples": [
-            " "
-          ]
-        }, 
+            "$id": "/properties/PublishDate",
+            "type": "string",
+            "title": "The Publishdate Schema.",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "yyyy-mm-dd"
+            ],
+            "format": "date"
+        },
         "ProjectDataAccessandUseConstraints": {
-          "$id": "/properties/CameraTrapMetadataStandard/properties/ProjectDataAccessandUseConstraints", 
-          "type": "string", 
-          "title": "The Projectdataaccessanduseconstraints Schema.", 
-          "description": "An explanation about the purpose of this instance.", 
-          "default": "", 
-          "examples": [
-            " "
-          ]
-        }, 
+            "$id": "/properties/ProjectDataAccessandUseConstraints",
+            "type": "string",
+            "title": "The Projectdataaccessanduseconstraints Schema.",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "string"
+            ]
+        },
         "PrincipalInvestigators": {
-          "$id": "/properties/CameraTrapMetadataStandard/properties/PrincipalInvestigators", 
-          "type": "object", 
-          "properties": {
-            "PrincipalInvestigator": {
-              "$id": "/properties/CameraTrapMetadataStandard/properties/PrincipalInvestigators/properties/PrincipalInvestigator", 
-              "type": "object", 
-              "properties": {
-                "PrincipalInvestigatorName": {
-                  "$id": "/properties/CameraTrapMetadataStandard/properties/PrincipalInvestigators/properties/PrincipalInvestigator/properties/PrincipalInvestigatorName", 
-                  "type": "string", 
-                  "title": "The Principalinvestigatorname Schema.", 
-                  "description": "An explanation about the purpose of this instance.", 
-                  "default": "", 
-                  "examples": [
-                    " "
-                  ]
-                }, 
-                "PrincipalInvestigatorEmail": {
-                  "$id": "/properties/CameraTrapMetadataStandard/properties/PrincipalInvestigators/properties/PrincipalInvestigator/properties/PrincipalInvestigatorEmail", 
-                  "type": "string", 
-                  "title": "The Principalinvestigatoremail Schema.", 
-                  "description": "An explanation about the purpose of this instance.", 
-                  "default": "", 
-                  "examples": [
-                    " "
-                  ]
+            "$id": "/properties/PrincipalInvestigators",
+            "type": "array",
+            "items": {
+                "$id": "/properties/PrincipalInvestigators/items",
+                "type": "object",
+                "properties": {
+                    "PrincipalInvestigatorName": {
+                        "$id": "/properties/PrincipalInvestigators/items/properties/PrincipalInvestigatorName",
+                        "type": "string",
+                        "title": "The Principalinvestigatorname Schema.",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "string"
+                        ]
+                    },
+                    "PrincipalInvestigatorEmail": {
+                        "$id": "/properties/PrincipalInvestigators/items/properties/PrincipalInvestigatorEmail",
+                        "type": "string",
+                        "title": "The Principalinvestigatoremail Schema.",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "email"
+                        ],
+                        "format": "email"
+                    }
                 }
-              }
             }
-          }
-        }, 
+        },
         "ProjectContacts": {
-          "$id": "/properties/CameraTrapMetadataStandard/properties/ProjectContacts", 
-          "type": "object", 
-          "properties": {
-            "ProjectContact": {
-              "$id": "/properties/CameraTrapMetadataStandard/properties/ProjectContacts/properties/ProjectContact", 
-              "type": "object", 
-              "properties": {
-                "ProjectContactName": {
-                  "$id": "/properties/CameraTrapMetadataStandard/properties/ProjectContacts/properties/ProjectContact/properties/ProjectContactName", 
-                  "type": "string", 
-                  "title": "The Projectcontactname Schema.", 
-                  "description": "An explanation about the purpose of this instance.", 
-                  "default": "", 
-                  "examples": [
-                    " "
-                  ]
-                }, 
-                "ProjectContactEmail": {
-                  "$id": "/properties/CameraTrapMetadataStandard/properties/ProjectContacts/properties/ProjectContact/properties/ProjectContactEmail", 
-                  "type": "string", 
-                  "title": "The Projectcontactemail Schema.", 
-                  "description": "An explanation about the purpose of this instance.", 
-                  "default": "", 
-                  "examples": [
-                    " "
-                  ]
+            "$id": "/properties/ProjectContacts",
+            "type": "array",
+            "items": {
+                "$id": "/properties/ProjectContacts/items",
+                "type": "object",
+                "properties": {
+                    "ProjectContactName": {
+                        "$id": "/properties/ProjectContacts/items/properties/ProjectContactName",
+                        "type": "string",
+                        "title": "The Projectcontactname Schema.",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "string"
+                        ]
+                    },
+                    "ProjectContactEmail": {
+                        "$id": "/properties/ProjectContacts/items/properties/ProjectContactEmail",
+                        "type": "string",
+                        "title": "The Projectcontactemail Schema.",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "email"
+                        ],
+                        "format": "email"
+                    }
                 }
-              }
             }
-          }
-        }, 
+        },
         "OrganizationName": {
-          "$id": "/properties/CameraTrapMetadataStandard/properties/OrganizationName", 
-          "type": "string", 
-          "title": "The Organizationname Schema.", 
-          "description": "An explanation about the purpose of this instance.", 
-          "default": "", 
-          "examples": [
-            " "
-          ]
-        }, 
+            "$id": "/properties/OrganizationName",
+            "type": "string",
+            "title": "The Organizationname Schema.",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "string"
+            ]
+        },
         "CameraDeploymentID": {
-          "$id": "/properties/CameraTrapMetadataStandard/properties/CameraDeploymentID", 
-          "type": "string", 
-          "title": "The Cameradeploymentid Schema.", 
-          "description": "An explanation about the purpose of this instance.", 
-          "default": "", 
-          "examples": [
-            " "
-          ]
-        }, 
+            "$id": "/properties/CameraDeploymentID",
+            "type": "string",
+            "title": "The Cameradeploymentid Schema.",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "uri"
+            ],
+            "format": "uri"
+        },
         "CameraSiteName": {
-          "$id": "/properties/CameraTrapMetadataStandard/properties/CameraSiteName", 
-          "type": "string", 
-          "title": "The Camerasitename Schema.", 
-          "description": "An explanation about the purpose of this instance.", 
-          "default": "", 
-          "examples": [
-            " "
-          ]
-        }, 
+            "$id": "/properties/CameraSiteName",
+            "type": "string",
+            "title": "The Camerasitename Schema.",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "string"
+            ]
+        },
         "CameraDeploymentBeginDate": {
-          "$id": "/properties/CameraTrapMetadataStandard/properties/CameraDeploymentBeginDate", 
-          "type": "string", 
-          "title": "The Cameradeploymentbegindate Schema.", 
-          "description": "An explanation about the purpose of this instance.", 
-          "default": "", 
-          "examples": [
-            " "
-          ]
-        }, 
+            "$id": "/properties/CameraDeploymentBeginDate",
+            "type": "string",
+            "title": "The Cameradeploymentbegindate Schema.",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "yyyy-mm-ddThh:mm:ss"
+            ],
+            "format": "date-time"
+        },
         "CameraDeploymentEndDate": {
-          "$id": "/properties/CameraTrapMetadataStandard/properties/CameraDeploymentEndDate", 
-          "type": "string", 
-          "title": "The Cameradeploymentenddate Schema.", 
-          "description": "An explanation about the purpose of this instance.", 
-          "default": "", 
-          "examples": [
-            " "
-          ]
-        }, 
+            "$id": "/properties/CameraDeploymentEndDate",
+            "type": "string",
+            "title": "The Cameradeploymentenddate Schema.",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "yyyy-mm-ddThh:mm:ss"
+            ],
+            "format": "date-time"
+        },
         "DeploymentLocationID": {
-          "$id": "/properties/CameraTrapMetadataStandard/properties/DeploymentLocationID", 
-          "type": "string", 
-          "title": "The Deploymentlocationid Schema.", 
-          "description": "An explanation about the purpose of this instance.", 
-          "default": "", 
-          "examples": [
-            " "
-          ]
-        }, 
+            "$id": "/properties/DeploymentLocationID",
+            "type": "string",
+            "title": "The Deploymentlocationid Schema.",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "[a-zA-Z0-9]"
+            ],
+            "pattern": "^[a-zA-Z0-9]*$"
+        },
         "QuietPeriodSetting": {
-          "$id": "/properties/CameraTrapMetadataStandard/properties/QuietPeriodSetting", 
-          "type": "string", 
-          "title": "The Quietperiodsetting Schema.", 
-          "description": "An explanation about the purpose of this instance.", 
-          "default": "", 
-          "examples": [
-            " "
-          ]
-        }, 
+            "$id": "/properties/QuietPeriodSetting",
+            "type": "number",
+            "title": "The Quietperiodsetting Schema.",
+            "description": "Time specified between shutter triggers when activity in the sensor will not trigger the shutter. Specified in minutes and fraction of minutes",
+            "default": 0,
+            "examples": [
+                1
+            ],
+            "minimum": 0
+        },
         "ActualLatitude": {
-          "$id": "/properties/CameraTrapMetadataStandard/properties/ActualLatitude", 
-          "type": "string", 
-          "title": "The Actuallatitude Schema.", 
-          "description": "An explanation about the purpose of this instance.", 
-          "default": "", 
-          "examples": [
-            " "
-          ]
-        }, 
+            "$id": "/properties/ActualLatitude",
+            "type": "number",
+            "title": "The Actuallatitude Schema.",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                1
+            ],
+            "minimum": 0
+        },
         "ActualLongitude": {
-          "$id": "/properties/CameraTrapMetadataStandard/properties/ActualLongitude", 
-          "type": "string", 
-          "title": "The Actuallongitude Schema.", 
-          "description": "An explanation about the purpose of this instance.", 
-          "default": "", 
-          "examples": [
-            " "
-          ]
-        }, 
+            "$id": "/properties/ActualLongitude",
+            "type": "number",
+            "title": "The Actuallongitude Schema.",
+            "description": "An explanation about the purpose of this instance.",
+            "default": 0,
+            "examples": [
+                1
+            ],
+            "minimum": 0
+        },
         "CameraMake": {
-          "$id": "/properties/CameraTrapMetadataStandard/properties/CameraMake", 
-          "type": "string", 
-          "title": "The Cameramake Schema.", 
-          "description": "An explanation about the purpose of this instance.", 
-          "default": "", 
-          "examples": [
-            " "
-          ]
-        }, 
+            "$id": "/properties/CameraMake",
+            "type": "string",
+            "title": "The Cameramake Schema.",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "string"
+            ]
+        },
         "Bait": {
-          "$id": "/properties/CameraTrapMetadataStandard/properties/Bait", 
-          "type": "string", 
-          "title": "The Bait Schema.", 
-          "description": "An explanation about the purpose of this instance.", 
-          "default": "", 
-          "examples": [
-            " "
-          ]
-        }, 
+            "$id": "/properties/Bait",
+            "type": "string",
+            "title": "The Bait Schema.",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "none",
+            "examples": [
+                "[none];scent;meat;visual;acoustic;other"
+            ],
+            "enum": [
+                "none",
+                "scent",
+                "meat",
+                "visual",
+                "acoustic",
+                "other"
+            ]
+        },
         "Feature": {
-          "$id": "/properties/CameraTrapMetadataStandard/properties/Feature", 
-          "type": "string", 
-          "title": "The Feature Schema.", 
-          "description": "An explanation about the purpose of this instance.", 
-          "default": "", 
-          "examples": [
-            " "
-          ]
-        }, 
+            "$id": "/properties/Feature",
+            "type": "string",
+            "title": "The Feature Schema.",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "other",
+            "examples": [
+                "road, paved;road, dirt;trail, hiking/people;trail, game;road underpass/overpass/bridge;culvert;burrow;nest site;carcass;water source/spring;fruiting tree;[other]"
+            ],
+            "enum": [
+                "road, paved",
+                "road, dirt",
+                "trail, hiking/people",
+                "trail, game",
+                "road underpass/overpass/bridge",
+                "culvert",
+                "burrow",
+                "nest site",
+                "carcass",
+                "water source/spring",
+                "fruiting tree",
+                "other"
+            ]
+        },
         "CameraStatus": {
-          "$id": "/properties/CameraTrapMetadataStandard/properties/CameraStatus", 
-          "type": "string", 
-          "title": "The Camerastatus Schema.", 
-          "description": "An explanation about the purpose of this instance.", 
-          "default": "", 
-          "examples": [
-            " "
-          ]
-        }, 
+            "$id": "/properties/CameraStatus",
+            "type": "string",
+            "title": "The Camerastatus Schema.",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "camera functioning",
+            "examples": [
+                "[camera functioning];unknown failure;vandalism/theft;memory card/film failure;camera hardware failure;wildlife damage"
+            ],
+            "enum": [
+                "camera functioning",
+                "unknown failure",
+                "vandalism/theft",
+                "memory card/film failure",
+                "camera hardware failure",
+                "wildlife damage"
+            ]
+        },
         "Other": {
-          "$id": "/properties/CameraTrapMetadataStandard/properties/Other", 
-          "type": "string", 
-          "title": "The Other Schema.", 
-          "description": "An explanation about the purpose of this instance.", 
-          "default": "", 
-          "examples": [
-            " "
-          ]
-        }, 
+            "$id": "/properties/Other",
+            "type": "string",
+            "title": "The Other Schema.",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+                "string"
+            ]
+        },
         "ImageSequence": {
-          "$id": "/properties/CameraTrapMetadataStandard/properties/ImageSequence", 
-          "type": "object", 
-          "properties": {
-            "ImageSequenceID": {
-              "$id": "/properties/CameraTrapMetadataStandard/properties/ImageSequence/properties/ImageSequenceID", 
-              "type": "string", 
-              "title": "The Imagesequenceid Schema.", 
-              "description": "An explanation about the purpose of this instance.", 
-              "default": "", 
-              "examples": [
-                " "
-              ]
-            }, 
-            "ImageSequenceBeginTime": {
-              "$id": "/properties/CameraTrapMetadataStandard/properties/ImageSequence/properties/ImageSequenceBeginTime", 
-              "type": "string", 
-              "title": "The Imagesequencebegintime Schema.", 
-              "description": "An explanation about the purpose of this instance.", 
-              "default": "", 
-              "examples": [
-                " "
-              ]
-            }, 
-            "ImageSequenceEndTime": {
-              "$id": "/properties/CameraTrapMetadataStandard/properties/ImageSequence/properties/ImageSequenceEndTime", 
-              "type": "string", 
-              "title": "The Imagesequenceendtime Schema.", 
-              "description": "An explanation about the purpose of this instance.", 
-              "default": "", 
-              "examples": [
-                " "
-              ]
-            }, 
-            "SequenceIdentificationsBy": {
-              "$id": "/properties/CameraTrapMetadataStandard/properties/ImageSequence/properties/SequenceIdentificationsBy", 
-              "type": "object", 
-              "properties": {
-                "sequenceIdentifiedBy": {
-                  "$id": "/properties/CameraTrapMetadataStandard/properties/ImageSequence/properties/SequenceIdentificationsBy/properties/sequenceIdentifiedBy", 
-                  "type": "string", 
-                  "title": "The Sequenceidentifiedby Schema.", 
-                  "description": "An explanation about the purpose of this instance.", 
-                  "default": "", 
-                  "examples": [
-                    " "
-                  ]
-                }
-              }
-            }, 
-            "SequenceIdentifications": {
-              "$id": "/properties/CameraTrapMetadataStandard/properties/ImageSequence/properties/SequenceIdentifications", 
-              "type": "object", 
-              "properties": {
-                "Identification": {
-                  "$id": "/properties/CameraTrapMetadataStandard/properties/ImageSequence/properties/SequenceIdentifications/properties/Identification", 
-                  "type": "object", 
-                  "properties": {
-                    "SpeciesScientificName": {
-                      "$id": "/properties/CameraTrapMetadataStandard/properties/ImageSequence/properties/SequenceIdentifications/properties/Identification/properties/SpeciesScientificName", 
-                      "type": "string", 
-                      "title": "The Speciesscientificname Schema.", 
-                      "description": "An explanation about the purpose of this instance.", 
-                      "default": "", 
-                      "examples": [
-                        " "
-                      ]
-                    }, 
-                    "Count": {
-                      "$id": "/properties/CameraTrapMetadataStandard/properties/ImageSequence/properties/SequenceIdentifications/properties/Identification/properties/Count", 
-                      "type": "string", 
-                      "title": "The Count Schema.", 
-                      "description": "An explanation about the purpose of this instance.", 
-                      "default": "", 
-                      "examples": [
-                        " "
-                      ]
+            "$id": "/properties/ImageSequence",
+            "type": "object",
+            "properties": {
+                "ImageSequenceID": {
+                    "$id": "/properties/ImageSequence/properties/ImageSequenceID",
+                    "type": "string",
+                    "title": "The Imagesequenceid Schema.",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "uri"
+                    ],
+                    "format": "uri"
+                },
+                "ImageSequenceBeginTime": {
+                    "$id": "/properties/ImageSequence/properties/ImageSequenceBeginTime",
+                    "type": "string",
+                    "title": "The Imagesequencebegintime Schema.",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "yyyy-mm-ddThh:mm:ss"
+                    ],
+                    "format": "date-time"
+                },
+                "ImageSequenceEndTime": {
+                    "$id": "/properties/ImageSequence/properties/ImageSequenceEndTime",
+                    "type": "string",
+                    "title": "The Imagesequenceendtime Schema.",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "yyyy-mm-ddThh:mm:ss"
+                    ],
+                    "format": "date-time"
+                },
+                "ImageSequenceDefinition": {
+                    "$id": "/properties/ImageSequence/properties/ImageSequenceDefinition",
+                    "type": "number",
+                    "title": "The Imagesequencedefinition Schema.",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": 0,
+                    "examples": [
+                        1
+                    ],
+                    "minimum": 0
+                },
+                "SequenceIdentifiedBy": {
+                    "$id": "/properties/ImageSequence/properties/SequenceIdentifiedBy",
+                    "type": "array",
+                    "items": {
+                        "$id": "/properties/ImageSequence/properties/SequenceIdentifiedBy/items",
+                        "type": "string",
+                        "title": "The 0 Schema.",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "string"
+                        ]
                     }
-                  }
+                },
+                "SequenceIdentifications": {
+                    "$id": "/properties/ImageSequence/properties/SequenceIdentifications",
+                    "type": "array",
+                    "items": {
+                        "$id": "/properties/ImageSequence/properties/SequenceIdentifications/items",
+                        "type": "object",
+                        "properties": {
+                            "SpeciesScientificName": {
+                                "$id": "/properties/ImageSequence/properties/SequenceIdentifications/items/properties/SpeciesScientificName",
+                                "type": "string",
+                                "title": "The Speciesscientificname Schema.",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "string"
+                                ]
+                            },
+                            "Count": {
+                                "$id": "/properties/ImageSequence/properties/SequenceIdentifications/items/properties/Count",
+                                "type": "number",
+                                "title": "The Count Schema.",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    1
+                                ],
+                                "minimum": 0
+                            }
+                        }
+                    }
                 }
-              }
             }
-          }
-        }, 
+        },
         "Image": {
-          "$id": "/properties/CameraTrapMetadataStandard/properties/Image", 
-          "type": "object", 
-          "properties": {
-            "ImageID": {
-              "$id": "/properties/CameraTrapMetadataStandard/properties/Image/properties/ImageID", 
-              "type": "string", 
-              "title": "The Imageid Schema.", 
-              "description": "An explanation about the purpose of this instance.", 
-              "default": "", 
-              "examples": [
-                " "
-              ]
-            }, 
-            "ImageDateTime": {
-              "$id": "/properties/CameraTrapMetadataStandard/properties/Image/properties/ImageDateTime", 
-              "type": "string", 
-              "title": "The Imagedatetime Schema.", 
-              "description": "An explanation about the purpose of this instance.", 
-              "default": "", 
-              "examples": [
-                " "
-              ]
-            }, 
-            "PhotoType": {
-              "$id": "/properties/CameraTrapMetadataStandard/properties/Image/properties/PhotoType", 
-              "type": "string", 
-              "title": "The Phototype Schema.", 
-              "description": "An explanation about the purpose of this instance.", 
-              "default": "", 
-              "examples": [
-                " "
-              ]
-            }, 
-            "PhotoTypeIdentifications": {
-              "$id": "/properties/CameraTrapMetadataStandard/properties/Image/properties/PhotoTypeIdentifications", 
-              "type": "object", 
-              "properties": {
+            "$id": "/properties/Image",
+            "type": "object",
+            "properties": {
+                "ImageID": {
+                    "$id": "/properties/Image/properties/ImageID",
+                    "type": "string",
+                    "title": "The Imageid Schema.",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "uri"
+                    ],
+                    "format": "uri"
+                },
+                "ImageDateTime": {
+                    "$id": "/properties/Image/properties/ImageDateTime",
+                    "type": "string",
+                    "title": "The Imagedatetime Schema.",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "yyyy-mm-ddThh:mm:ss"
+                    ],
+                    "format": "date-time"
+                },
+                "PhotoType": {
+                    "$id": "/properties/Image/properties/PhotoType",
+                    "type": "string",
+                    "title": "The Phototype Schema.",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                        "start;end;set up;blank;animal;staff;unknown;unidentifiable;timelapse;[]"
+                    ],
+                    "enum": [
+                        "start",
+                        "end",
+                        "set up",
+                        "blank",
+                        "animal",
+                        "staff",
+                        "unknown",
+                        "unidentifiable",
+                        "timelapse",
+                        ""
+                    ]
+                },
                 "PhotoTypeIdentifiedBy": {
-                  "$id": "/properties/CameraTrapMetadataStandard/properties/Image/properties/PhotoTypeIdentifications/properties/PhotoTypeIdentifiedBy", 
-                  "type": "string", 
-                  "title": "The Phototypeidentifiedby Schema.", 
-                  "description": "An explanation about the purpose of this instance.", 
-                  "default": "", 
-                  "examples": [
-                    " "
-                  ]
-                }
-              }
-            }, 
-            "ImageIdentifications": {
-              "$id": "/properties/CameraTrapMetadataStandard/properties/Image/properties/ImageIdentifications", 
-              "type": "object", 
-              "properties": {
-                "Identification": {
-                  "$id": "/properties/CameraTrapMetadataStandard/properties/Image/properties/ImageIdentifications/properties/Identification", 
-                  "type": "object", 
-                  "properties": {
-                    "SpeciesScientificName": {
-                      "$id": "/properties/CameraTrapMetadataStandard/properties/Image/properties/ImageIdentifications/properties/Identification/properties/SpeciesScientificName", 
-                      "type": "string", 
-                      "title": "The Speciesscientificname Schema.", 
-                      "description": "An explanation about the purpose of this instance.", 
-                      "default": "", 
-                      "examples": [
-                        " "
-                      ]
-                    }, 
-                    "Count": {
-                      "$id": "/properties/CameraTrapMetadataStandard/properties/Image/properties/ImageIdentifications/properties/Identification/properties/Count", 
-                      "type": "string", 
-                      "title": "The Count Schema.", 
-                      "description": "An explanation about the purpose of this instance.", 
-                      "default": "", 
-                      "examples": [
-                        " "
-                      ]
+                    "$id": "/properties/Image/properties/PhotoTypeIdentifiedBy",
+                    "type": "array",
+                    "items": {
+                        "$id": "/properties/Image/properties/PhotoTypeIdentifiedBy/items",
+                        "type": "string",
+                        "title": "The 0 Schema.",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                            "string"
+                        ]
                     }
-                  }
+                },
+                "ImageIdentifications": {
+                    "$id": "/properties/Image/properties/ImageIdentifications",
+                    "type": "array",
+                    "items": {
+                        "$id": "/properties/Image/properties/ImageIdentifications/items",
+                        "type": "object",
+                        "properties": {
+                            "SpeciesScientificName": {
+                                "$id": "/properties/Image/properties/ImageIdentifications/items/properties/SpeciesScientificName",
+                                "type": "string",
+                                "title": "The Speciesscientificname Schema.",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": "",
+                                "examples": [
+                                    "string"
+                                ]
+                            },
+                            "Count": {
+                                "$id": "/properties/Image/properties/ImageIdentifications/items/properties/Count",
+                                "type": "number",
+                                "title": "The Count Schema.",
+                                "description": "An explanation about the purpose of this instance.",
+                                "default": 0,
+                                "examples": [
+                                    1
+                                ],
+                                "minimum": 0
+                            }
+                        }
+                    }
                 }
-              }
             }
-          }
         }
-      }
     }
-  }
 }
